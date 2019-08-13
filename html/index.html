@@ -11,7 +11,36 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title></title>
+    <title>Cat-Talk | Chats</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
+    <div class="top-bar">
+      <div class="top-bar__iconBox">
+        <i class="far fa-image"></i>
+        <i class="fas fa-registered"></i>
+      </div>
+      <div class="top-bar__phoneInfoBox">
+        <!-- css들어있는 아이콘들 -->
+        <i class="fab fa-bluetooth-b"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-filter"></i>
+        <span class="top-bar__battery">88% </span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <span class="top-bar__clock">오후 08:33 </span>
+      </div>
+    </div>
+    <!-- 구동 앱의 헤더부분 -->
+    <header class="header">
+      <div class="header_column">
+        <h1 class="header_title">채팅</h1>
+      </div>
+      <div class="header_column header_right-icon">
+        <span><i class="fas fa-search"></i></span>
+        <span><i class="far fa-comment-alt"></i></span>
+        <span><i class="fas fa-headphones-alt"></i></span>
+        <span><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
+  </body>
 </html>
