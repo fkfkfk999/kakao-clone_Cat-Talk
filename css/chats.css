@@ -1,0 +1,23 @@
+main.chats-main {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+div.g-item__column div.chat-info {
+  margin-left: 15px;
+}
+div.g-item__column div.chat-info span {
+  display: block;
+}
+div.chat-info span:first-child {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+div.chat-info span:nth-child(2) {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(200, 87, 106);
+}
+div.g-item__column span.receive_time {
+  opacity: 0.4;
+}

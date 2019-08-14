@@ -31,20 +31,83 @@
   <!-- 구동 앱의 헤더부분 -->
   <header class="header">
     <div class="header_column">
-      <h1 class="header_title">채팅</h1>
+      <h1 class="header_title">더 보기</h1>
     </div>
     <div class="header_column header_right-icon">
-      <span><i class="fas fa-search"></i></span>
       <span><i class="fas fa-qrcode"></i></i></span>
       <span><i class="fas fa-headphones-alt"></i></span>
-      <span><i class="fas fa-cog"></i></span>
+      <span>
+        <a href="setting.html"><i class="fas fa-cog"></i></a>
+      </span>
     </div>
   </header>
+  <main class="main-more">
+    <header class="more-header">
+      <div class="more-header__column">
+          <img src="../image/myAvater.jpg" class="g-avatar middle-img">
+          <div class="more-header__my-info">
+              <span class="my-name">yjh88learn</span>
+              <span class="my-mail">yjh88learn@gmail.com</span>
+          </div>
+      </div>
+      <div class="more-header__column">
+          <span class="my-name">MY</span>
+      </div>     
+    </header>
+    <section class="cat-pay">
+      <div class="cat-pay__column">
+        <h3><i class="fas fa-cat"></i>pay</h3>
+        <span> > &nbsp;&nbsp;0원</span>
+        <button>충전</button>
+      </div>
+      <div class="cat-pay__column">
+        <a href="#">송금</a>
+        <span>|</span>
+        <a href="#">결제</a>
+      </div>
+    </section>
+    <section class="more-icons">
+      <ul class="icons-list">
+        <li class="more-icon">
+            <i class="far fa-file"></i>
+            <span>페이지</span>
+        </li>
+        <li class="more-icon">
+            <i class="fas fa-shopping-bag"></i>
+            <span>쇼핑</span>
+        </li>
+        <li class="more-icon">
+            <i class="fas fa-tshirt"></i>
+            <span>스타일</span>
+        </li>
+        <li class="more-icon">
+            <i class="fas fa-store"></i>
+            <span>스토어</span>
+        </li>
+        <li class="more-icon">
+            <i class="far fa-credit-card"></i>
+            <span>주문</span>
+        </li>
+        <li class="more-icon">
+            <i class="fas fa-surprise"></i>
+            <span>이모티콘</span>
+        </li>
+        <li class="more-icon">
+            <i class="fas fa-gift"></i>
+            <span>선물</span>
+        </li>
+        <li class="more-icon">
+            <i class="fas fa-gamepad"></i>
+            <span>게임</span>
+        </li>
+      </ul>
+    </section>
+  </main>
   <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
   <nav class="menu">
     <!-- 메뉴 버튼은 리스트로 만든다. -->
     <ul class="menu_list">
-      <li class="menu_list_item active">
+      <li class="menu_list_item">
         <a href="friends.html" class="menu_list_item_link">
           <i class="fas fa-user"></i>
         </a>
@@ -61,12 +124,17 @@
         </a>
       </li>
       <li class="menu_list_item">
-        <a href="more.html" class="menu_list_item_link">
+        <a href="more.html" class="menu_list_item_link active">
           <i class="fas fa-cat"></i>
         </a>
       </li>
     </ul>
   </nav>
+  <div class="bigScreen">
+      <span class="bigScreen__text">
+        브라우저의 화면을 줄여주시기 바랍니다.
+      </span>
+    </div>
 </body>
 
 </html>

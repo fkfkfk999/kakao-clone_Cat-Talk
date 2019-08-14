@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Cat-Talk | Find</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <title>Cat-Talk | Find</title>
-</head>
-
-<body>
-  <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
-  <div class="top-bar">
-    <div class="top-bar__iconBox">
-      <i class="far fa-image"></i>
-      <i class="fas fa-registered"></i>
+  <body>
+    <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
+    <div class="top-bar">
+      <div class="top-bar__iconBox">
+        <i class="far fa-image"></i>
+        <i class="fas fa-registered"></i>
+      </div>
+      <div class="top-bar__phoneInfoBox">
+        <!-- css들어있는 아이콘들 -->
+        <i class="fab fa-bluetooth-b"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-filter"></i>
+        <span class="top-bar__battery">88% </span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <span class="top-bar__clock">오후 08:33 </span>
+      </div>
     </div>
-    <div class="top-bar__phoneInfoBox">
-      <!-- css들어있는 아이콘들 -->
-      <i class="fab fa-bluetooth-b"></i>
-      <i class="fas fa-volume-up"></i>
-      <i class="fas fa-filter"></i>
-      <span class="top-bar__battery">88% </span>
-      <i class="fas fa-battery-three-quarters"></i>
-      <span class="top-bar__clock">오후 08:33 </span>
+    <!-- 구동 앱의 헤더부분 -->
+    <header class="header">
+      <div class="header_column">
+        <a href="friends.html"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="header_title">추천친구</h1>
+      </div>
+    </header>
+    <main class="main-find">
+      <section class="recommend">
+        <header class="recommend-header">
+          <h5>추천친구</h5>
+        </header>
+        <div class="recommend-box">
+          <div class="recommend-column">
+            <img src="../image/avatar5.jpg" class="g-avatar middle-img" />
+            <span>차를 판매하고 있습니다.</span>
+          </div>
+          <div class="recommend-column">
+            <i class="fas fa-user-plus"></i>
+          </div>
+        </div>
+        <div class="recommend-box">
+          <div class="recommend-column">
+            <img src="../image/avatar6.jpg" class="g-avatar middle-img" />
+            <span>아파서 치료중입니다.</span>
+          </div>
+          <div class="recommend-column">
+            <i class="fas fa-user-plus"></i>
+          </div>
+        </div>
+        <div class="recommend-box">
+          <div class="recommend-column">
+            <img src="../image/avatar7.jpg" class="g-avatar middle-img" />
+            <span>건강주스 레시피</span>
+          </div>
+          <div class="recommend-column">
+            <i class="fas fa-user-plus"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
+    <nav class="menu">
+      <!-- 메뉴 버튼은 리스트로 만든다. -->
+      <ul class="menu_list">
+        <li class="menu_list_item">
+          <a href="friends.html" class="menu_list_item_link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="menu_list_item">
+          <a href="index.html" class="menu_list_item_link">
+            <div class="push-count">1</div>
+            <i class="far fa-comment-alt"></i>
+          </a>
+        </li>
+        <li class="menu_list_item">
+          <a href="find.html" class="menu_list_item_link active">
+            <i class="fas fa-cat"></i>
+          </a>
+        </li>
+        <li class="menu_list_item">
+          <a href="more.html" class="menu_list_item_link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">
+        브라우저의 화면을 줄여주시기 바랍니다.
+      </span>
     </div>
-  </div>
-  <!-- 구동 앱의 헤더부분 -->
-  <header class="header">
-    <div class="header_column">
-      <i class="fas fa-arrow-left"></i>
-      <h1 class="header_title">추천친구</h1>
-    </div>
-  </header>
-  <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
-  <nav class="menu">
-    <!-- 메뉴 버튼은 리스트로 만든다. -->
-    <ul class="menu_list">
-      <li class="menu_list_item active">
-        <a href="friends.html" class="menu_list_item_link">
-          <i class="fas fa-user"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="index.html" class="menu_list_item_link">
-          <div class="push-count">1</div>
-          <i class="far fa-comment-alt"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="find.html" class="menu_list_item_link">
-          <i class="fas fa-cat"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="more.html" class="menu_list_item_link">
-          <i class="fas fa-ellipsis-h"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</body>
-
+  </body>
 </html>

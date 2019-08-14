@@ -1,0 +1,26 @@
+ul.g-list {
+  width: 100%;
+}
+
+ul.g-list a li.g-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+li.g-item div.g-item__column {
+  display: flex;
+  align-items: center;
+}
+.g-avatar {
+  border-radius: 17px;
+}
+.middle-img {
+  width: 60px;
+  height: 60px;
+}
+
+.small-img {
+  width: 47px;
+  height: 47px;
+}

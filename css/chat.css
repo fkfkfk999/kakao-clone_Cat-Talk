@@ -1,0 +1,134 @@
+@keyframes your-chatAnim {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+section.chatList div.your-chat {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  animation: your-chatAnim 1s ease-out forwards;
+}
+div.your-chat img {
+  margin-right: 10px;
+}
+div.your-chat div.chat__column span.your-name {
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+div.chat__column div.column-item {
+  display: flex;
+  align-items: flex-end;
+}
+div.column-item div.chat-area {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+}
+div.column-item div.chat-area span {
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border: 5px solid #b7a4db;
+}
+div.column-item span.chat-time {
+  font-size: 13px;
+  opacity: 0.4;
+}
+@keyframes my-chatAnim {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+section.chatList div.my-chat {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  animation: my-chatAnim 0.5s ease-out forwards;
+}
+div.my-chat div.chat__column {
+  display: flex;
+  align-items: flex-end;
+}
+div.my-chat div.chat__column div.chat-area {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+}
+div.my-chat div.chat__column div.chat-area span {
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border: 5px solid #d596dd;
+}
+div.chat__column span.chat-time {
+  font-size: 13px;
+  opacity: 0.4;
+}
+div.chat-input {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  transition: transform 0.5s ease-in;
+  transform: translateY(60px);
+}
+div.chat-input:hover {
+  transform: translateY(-1px);
+}
+div.chat-input div.basic-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 30px;
+  background-color: #d5c3f7b0;
+}
+div.chat-input div.basic-input input {
+  width: 70%;
+  border: none;
+  background-color: #d5c3f7b0;
+  padding: 10px 10px;
+  font-size: 25px;
+  margin: 0 10px;
+}
+div.chat-input div.basic-input i {
+  opacity: 0.5;
+}
+div.chat-input div.basic-input i:last-child {
+  margin-left: 30px;
+}
+div.chat-input div.more-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 20px;
+  background-color: #dabaa5ea;
+}
+div.more-input div.more-input__column i {
+  cursor: pointer;
+}
+div.more-input div.more-input__column:last-child {
+  opacity: 0.5;
+}
+div.more-input div.more-input__column:last-child i {
+  margin-left: 15px;
+}

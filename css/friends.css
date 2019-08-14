@@ -1,0 +1,92 @@
+main.main-friends {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+main.main-friends header.friends-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #8684861e;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+header.friends-header span {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+main.main-friends section.recommend {
+  border-bottom: 2px solid #8684861e;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+section header.recommend-header {
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #df7b64;
+}
+
+section.recommend a div.recommend-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.recommend-box div.recommend-column {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+div.recommend-column div.icon-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c7b0f0;
+  background-color: #834ae7;
+  color: white;
+  font-size: 25px;
+  margin-right: 10px;
+}
+div.recommend-column span.recommend-count {
+  font-size: 15px;
+  opacity: 0.3;
+}
+
+main.main-friends section.reg-friends ul.reg-friends__list li.reg-friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+li.reg-friend div.reg-friend__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+li.reg-friend div.reg-friend__column:first-child img {
+  margin-right: 10px;
+}
+div.reg-friend__column:first-child div.reg-friend__info span {
+  display: block;
+}
+
+div.reg-friend__column:first-child div.reg-friend__info span:first-child {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+div.reg-friend__column:first-child div.reg-friend__info span:nth-child(2) {
+  font-size: 15px;
+  color: rgb(200, 87, 106);
+}
+
+div.reg-friend__column:nth-child(2) {
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 13px;
+}
+div.reg-friend__column:nth-child(2) span.friend-music {
+  margin-right: 5px;
+}

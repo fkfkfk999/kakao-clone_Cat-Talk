@@ -1,150 +1,163 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Cat-Talk | Friends</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <title>Cat-Talk | Friends</title>
-</head>
-
-<body>
-  <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
-  <div class="top-bar">
-    <div class="top-bar__iconBox">
-      <i class="far fa-image"></i>
-      <i class="fas fa-registered"></i>
+  <body>
+    <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
+    <div class="top-bar">
+      <div class="top-bar__iconBox">
+        <i class="far fa-image"></i>
+        <i class="fas fa-registered"></i>
+      </div>
+      <div class="top-bar__phoneInfoBox">
+        <!-- css들어있는 아이콘들 -->
+        <i class="fab fa-bluetooth-b"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-filter"></i>
+        <span class="top-bar__battery">88% </span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <span class="top-bar__clock">오후 08:33 </span>
+      </div>
     </div>
-    <div class="top-bar__phoneInfoBox">
-      <!-- css들어있는 아이콘들 -->
-      <i class="fab fa-bluetooth-b"></i>
-      <i class="fas fa-volume-up"></i>
-      <i class="fas fa-filter"></i>
-      <span class="top-bar__battery">88% </span>
-      <i class="fas fa-battery-three-quarters"></i>
-      <span class="top-bar__clock">오후 08:33 </span>
-    </div>
-  </div>
-  <!-- 구동 앱의 헤더부분 -->
-  <header class="header">
-    <div class="header_column">
-      <h1 class="header_title">친구</h1>
-    </div>
-    <div class="header_column header_right-icon">
-      <span><i class="fas fa-search"></i></span>
-      <span><i class="fas fa-user-plus"></i></span>
-      <span><i class="fas fa-headphones-alt"></i></span>
-      <span><i class="fas fa-cog"></i></span>
-    </div>
-  </header>
-  <main>
-    <header class="friends-header">
-      <img src="../image/myAvater.jpg" class="g-avatar large-img">
-      <span class="my-name">yjh88learn</span>
+    <!-- 구동 앱의 헤더부분 -->
+    <header class="header">
+      <div class="header_column">
+        <h1 class="header_title">친구</h1>
+      </div>
+      <div class="header_column header_right-icon">
+        <a href="find.html"><i class="fas fa-search"></i></a>
+        <span><i class="fas fa-user-plus"></i></span>
+        <span><i class="fas fa-headphones-alt"></i></span>
+      </div>
     </header>
-    <section class="recommend">
-      <header class="recommend-header">
-        <h5>추천친구</h5>
+    <main class="main-friends">
+      <header class="friends-header">
+        <img src="../image/myAvater.jpg" class="g-avatar middle-img" />
+        <span class="my-name">yjh88learn</span>
       </header>
-      <a href="find.html">
-        <div class="recommend-box">
-          <div class="recommend-column">
-            <i class="far fa-smile"></i>
-            <span>새로운 친구를 만나보세요.</span>
+      <section class="recommend">
+        <header class="recommend-header">
+          <h5>추천친구</h5>
+        </header>
+        <a href="find.html">
+          <div class="recommend-box">
+            <div class="recommend-column">
+              <div class="g-avatar small-img icon-area">
+                <i class="far fa-smile"></i>
+              </div>
+              <span>새로운 친구를 만나보세요.</span>
+            </div>
+            <div class="recommend-column">
+              <span class="recommend-count">
+                29
+                <i class="fas fa-chevron-right"></i>
+              </span>
+            </div>
           </div>
-          <div class="recommend-column">
-            <span class="recommend-count">
-              29
-              <i class="fas fa-chevron-right"></i>
-            </span>
+        </a>
+      </section>
+      <section class="recommend">
+        <header class="recommend-header">
+          <h5>플러스친구</h5>
+        </header>
+        <a href="find.html">
+          <div class="recommend-box">
+            <div class="recommend-column">
+              <div class="g-avatar small-img icon-area">
+                <i class="fas fa-cat"></i>
+              </div>
+              <span>플러스친구</span>
+            </div>
+            <div class="recommend-column">
+              <span class="recommend-count">
+                34
+                <i class="fas fa-chevron-right"></i>
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
-    </section>
-    <section class="recommend">
-      <header class="recommend-header">
-        <h5>플러스친구</h5>
-      </header>
-      <a href="find.html">
-        <div class="recommend-box">
-          <div class="recommend-column">
+        </a>
+      </section>
+      <section class="reg-friends">
+        <header class="recommend-header">
+          <h5>친구 3</h5>
+        </header>
+        <ul class="reg-friends__list">
+          <li class="reg-friend">
+            <div class="reg-friend__column">
+              <img src="../image/avatar3.jpg" class="g-avatar small-img" />
+              <div class="reg-friend__info">
+                <span class="friend-name">공주</span>
+              </div>
+            </div>
+          </li>
+          <li class="reg-friend">
+            <div class="reg-friend__column">
+              <img src="../image/avatar4.jpg" class="g-avatar small-img" />
+              <div class="reg-friend__info">
+                <span class="friend-name">철수</span>
+                <span class="status">더 잘하고 싶다</span>
+              </div>
+            </div>
+            <div class="reg-friend__column">
+              <span class="friend-music">친구여(Feat. 인순이) - 조PD</span>
+              <i class="far fa-play-circle"></i>
+            </div>
+          </li>
+          <li class="reg-friend">
+            <div class="reg-friend__column">
+              <img src="../image/avatar2.jpg" class="g-avatar small-img" />
+              <div class="reg-friend__info">
+                <span class="friend-name">보배</span>
+                <span class="status">다...다이어트?</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
+    <nav class="menu">
+      <!-- 메뉴 버튼은 리스트로 만든다. -->
+      <ul class="menu_list">
+        <li class="menu_list_item">
+          <a href="friends.html" class="menu_list_item_link active">
             <i class="fas fa-cat"></i>
-            <span>플러스친구</span>
-          </div>
-          <div class="recommend-column">
-            <span class="recommend-count">
-              34
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </div>
-        </div>
-      </a>
-    </section>
-    <section class="reg-friends">
-      <ul class="reg-friends__list">
-        <li class="reg-friend">
-          <div class="reg-friend__column">
-            <img src="../image/avatar3.jpg" class="g-avatar middle-img">
-            <div class="reg-friend__info">
-              <span class="friend-name">공주</span>
-            </div>
-          </div>
+          </a>
         </li>
-        <li class="reg-friend">
-          <div class="reg-friend__column">
-            <img src="../image/avatar4.jpg" class="g-avatar middle-img">
-            <div class="reg-friend__info">
-              <span class="friend-name">철수</span>
-              <span class="status">더 잘하고 싶다</span>
-            </div>
-          </div>
-          <div class="reg-friend__column">
-            <span class="friend-music">친구여(Feat. 인순이) - 조PD</span>
-            <i class="far fa-play-circle"></i>
-          </div>
+        <li class="menu_list_item">
+          <a href="index.html" class="menu_list_item_link">
+            <div class="push-count">1</div>
+            <i class="far fa-comment-alt"></i>
+          </a>
         </li>
-        <li class="reg-friend">
-          <div class="reg-friend__column">
-            <img src="../image/avatar2.jpg" class="g-avatar middle-img">
-            <div class="reg-friend__info">
-              <span class="friend-name">보배</span>
-              <span class="status">다...다이어트?</span>
-            </div>
-          </div>
+        <li class="menu_list_item">
+          <a href="find.html" class="menu_list_item_link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="menu_list_item">
+          <a href="more.html" class="menu_list_item_link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
         </li>
       </ul>
-    </section>
-  </main>
-  <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
-  <nav class="menu">
-    <!-- 메뉴 버튼은 리스트로 만든다. -->
-    <ul class="menu_list">
-      <li class="menu_list_item active">
-        <a href="friends.html" class="menu_list_item_link">
-          <i class="fas fa-cat"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="index.html" class="menu_list_item_link">
-          <div class="push-count">1</div>
-          <i class="far fa-comment-alt"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="find.html" class="menu_list_item_link">
-          <i class="fas fa-search"></i>
-        </a>
-      </li>
-      <li class="menu_list_item">
-        <a href="more.html" class="menu_list_item_link">
-          <i class="fas fa-ellipsis-h"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</body>
-
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">
+        브라우저의 화면을 줄여주시기 바랍니다.
+      </span>
+    </div>
+  </body>
 </html>
