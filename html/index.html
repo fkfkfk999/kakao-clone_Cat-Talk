@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Cat-Talk | Chats</title>
-  </head>
-  <body>
-    <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
-    <div class="top-bar">
-      <div class="top-bar__iconBox">
-        <i class="far fa-image"></i>
-        <i class="fas fa-registered"></i>
-      </div>
-      <div class="top-bar__phoneInfoBox">
-        <!-- css들어있는 아이콘들 -->
-        <i class="fab fa-bluetooth-b"></i>
-        <i class="fas fa-volume-up"></i>
-        <i class="fas fa-filter"></i>
-        <span class="top-bar__battery">88% </span>
-        <i class="fas fa-battery-three-quarters"></i>
-        <span class="top-bar__clock">오후 08:33 </span>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Cat-Talk | Chats</title>
+</head>
+
+<body>
+  <!-- 스크린샷 최상단의 핸드폰 상태바를 만들어준다. -->
+  <div class="top-bar">
+    <div class="top-bar__iconBox">
+      <i class="far fa-image"></i>
+      <i class="fas fa-registered"></i>
     </div>
-    <!-- 구동 앱의 헤더부분 -->
-    <header class="header">
-      <div class="header_column">
-        <h1 class="header_title">채팅</h1>
-      </div>
-      <div class="header_column header_right-icon">
-        <span><i class="fas fa-search"></i></span>
-        <span><i class="far fa-comment-alt"></i></span>
-        <span><i class="fas fa-headphones-alt"></i></span>
-        <span><i class="fas fa-cog"></i></span>
-      </div>
-    </header>
-  </body>
+    <div class="top-bar__phoneInfoBox">
+      <!-- css들어있는 아이콘들 -->
+      <i class="fab fa-bluetooth-b"></i>
+      <i class="fas fa-volume-up"></i>
+      <i class="fas fa-filter"></i>
+      <span class="top-bar__battery">88% </span>
+      <i class="fas fa-battery-three-quarters"></i>
+      <span class="top-bar__clock">오후 08:33 </span>
+    </div>
+  </div>
+  <!-- 구동 앱의 헤더부분 -->
+  <header class="header">
+    <div class="header_column">
+      <h1 class="header_title">채팅</h1>
+    </div>
+    <div class="header_column header_right-icon">
+      <span><i class="fas fa-search"></i></span>
+      <span><i class="far fa-comment-alt"></i></span>
+      <span><i class="fas fa-headphones-alt"></i></span>
+      <span><i class="fas fa-cog"></i></span>
+    </div>
+  </header>
+  <!-- 메뉴부분 최하단이지만 메뉴이기 때문에 nav태그 -->
+  <nav class="menu">
+    <!-- 메뉴 버튼은 리스트로 만든다. -->
+    <ul class="menu_list">
+      <li class="menu_list_item active">
+        <a href="friends.html" class="menu_list_item_link">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li class="menu_list_item">
+        <a href="index.html" class="menu_list_item_link">
+          <!-- <div class="push-count">9+</div> -->
+          <i class="fas fa-cat"></i>
+        </a>
+      </li>
+      <li class="menu_list_item">
+        <a href="find.html" class="menu_list_item_link">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="menu_list_item">
+        <a href="more.html" class="menu_list_item_link">
+          <i class="fas fa-ellipsis-h"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
 </html>
